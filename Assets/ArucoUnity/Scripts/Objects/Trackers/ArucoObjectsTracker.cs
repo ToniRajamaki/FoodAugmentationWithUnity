@@ -311,8 +311,7 @@ namespace ArucoUnity.Objects.Trackers
       }
       catch (Exception e)
       {
-        StopController();
-        throw e;
+                Debug.Log("Erroria pukkaa");
       }
     }
 
