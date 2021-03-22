@@ -22,7 +22,7 @@ namespace ArucoUnity.Objects
 
     [SerializeField]
     [Tooltip("The side length of each marker. In pixels for Creators. In meters for Trackers and Calibrators.")]
-    private float markerSideLength;
+    public float markerSideLength;
 
     [SerializeField]
     [Tooltip("Number of bits in marker borders (default: 1). Used by Creators.")]
@@ -185,5 +185,15 @@ namespace ArucoUnity.Objects
       }
       return propertyValueInt;
     }
-  }
+
+
+    public float Give_SideLength()
+    {
+        return markerSideLength;
+    }
+
+
+    }
+    
+
 }

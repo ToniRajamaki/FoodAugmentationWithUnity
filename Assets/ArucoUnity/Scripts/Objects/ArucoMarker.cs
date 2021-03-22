@@ -76,4 +76,5 @@ namespace ArucoUnity.Objects
       return hashCode;
     }
   }
+   
 }
