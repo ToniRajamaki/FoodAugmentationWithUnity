@@ -437,7 +437,7 @@ GameObject:
   m_Layer: 0
   m_Name: ArucoMarker Dict4x4_50 Id_10 (cube)
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -483,7 +483,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dictionaryName: 0
-  markerSideLength: 0.023
+  markerSideLength: 0.173
   markerBorderBits: 1
   markerId: 0
 --- !u!1 &274848815
@@ -1428,7 +1428,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &887812763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1567,7 +1567,7 @@ PrefabInstance:
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
       propertyPath: drawDetectedMarkers
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
@@ -1577,22 +1577,22 @@ PrefabInstance:
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
       propertyPath: drawAxes
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
       propertyPath: drawDetectedCharucoMarkers
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
       propertyPath: drawDetectedDiamonds
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114704470919034220, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
       propertyPath: drawRejectedCandidates
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114710025698078358, guid: 59dab6b4111ee0849bb667a5a1d298e5,
         type: 3}
@@ -2066,8 +2066,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108873193}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.0299, z: 0}
-  m_LocalScale: {x: 0.054, y: 0.054, z: 0.054}
+  m_LocalPosition: {x: 0, y: 0.0467, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_Children:
   - {fileID: 770032598}
   m_Father: {fileID: 240291944}
@@ -2886,7 +2886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2064970238
 Transform:
   m_ObjectHideFlags: 0
