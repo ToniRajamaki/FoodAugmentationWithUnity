@@ -10,6 +10,7 @@ public class AccuracyCalc : MonoBehaviour
     [SerializeField] GameObject ao;
     [SerializeField] GameObject press_space_object;
     [SerializeField] GameObject slider_object;
+    [SerializeField] GameObject timerObject;
     Slider slider;
     int found;
     int notFound;
@@ -39,7 +40,7 @@ public class AccuracyCalc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
+        timerObject.SetActive(false);
         time = testingTime;
         trackingTime = false;
         stillTesting = false;
@@ -66,6 +67,7 @@ public class AccuracyCalc : MonoBehaviour
             stillTesting = true;
             Invoke("StopTesting", testingTime);
             trackingTime = true;
+            timerObject.SetActive(true);
 
         }
 
@@ -123,6 +125,9 @@ public class AccuracyCalc : MonoBehaviour
         stillTesting = false;
         print(accuracy);
         ResetValues();
+        timerObject.SetActive(false);
+
+
 
     }
 
