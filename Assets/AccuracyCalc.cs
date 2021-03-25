@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AccuracyCalc : MonoBehaviour
 {
 
     [SerializeField] GameObject ao;
     [SerializeField] GameObject press_space_object;
+    [SerializeField] GameObject slider_object;
+    Slider slider;
     int found;
     int notFound;
     int totalFrames;
@@ -36,6 +39,7 @@ public class AccuracyCalc : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         time = testingTime;
         trackingTime = false;
         stillTesting = false;
@@ -45,9 +49,12 @@ public class AccuracyCalc : MonoBehaviour
         foundText = foundObject.GetComponent<TextMeshProUGUI>();
         accuracyText = accuracyObject.GetComponent<TextMeshProUGUI>();
         notFoundText = notFoundObject.GetComponent<TextMeshProUGUI>();
+        slider = slider_object.GetComponent<Slider>();
 
         found = 0;
         notFound = 0;
+        notFoundText.text = notFound.ToString();
+        foundText.text = found.ToString();
     }
 
     // Update is called once per frame
@@ -101,6 +108,8 @@ public class AccuracyCalc : MonoBehaviour
             if (totalFrames > 0)
             {
                 accuracy = (100f * found / totalFrames);
+                slider.value = accuracy;
+                
                 accuracyText.text = System.Math.Round(accuracy,2).ToString() + '%';
             }
             return;
