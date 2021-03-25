@@ -9,6 +9,7 @@ public class AccuracyCalc : MonoBehaviour
     [SerializeField] GameObject ao;
     [SerializeField] GameObject press_space_object;
     int found;
+    int notFound;
     int totalFrames;
     float accuracy;
     [SerializeField] float testingTime;
@@ -24,8 +25,11 @@ public class AccuracyCalc : MonoBehaviour
     [SerializeField] GameObject framesObject;
     TextMeshProUGUI totalFramesText;
 
-    [SerializeField] GameObject foundObject;
+    [SerializeField] GameObject foundObject;//success recognitions
     TextMeshProUGUI foundText;
+
+    [SerializeField] GameObject notFoundObject; //failed recognitions
+    TextMeshProUGUI notFoundText;
 
     [SerializeField] GameObject accuracyObject;
     TextMeshProUGUI accuracyText;
@@ -40,7 +44,10 @@ public class AccuracyCalc : MonoBehaviour
         totalFramesText = framesObject.GetComponent<TextMeshProUGUI>();
         foundText = foundObject.GetComponent<TextMeshProUGUI>();
         accuracyText = accuracyObject.GetComponent<TextMeshProUGUI>();
+        notFoundText = notFoundObject.GetComponent<TextMeshProUGUI>();
+
         found = 0;
+        notFound = 0;
     }
 
     // Update is called once per frame
@@ -78,6 +85,10 @@ public class AccuracyCalc : MonoBehaviour
                 stillTesting = true;
                 found++;
             }
+            else
+            {
+                notFound++;
+            }
 
         
             totalFrames++;
@@ -85,6 +96,7 @@ public class AccuracyCalc : MonoBehaviour
 
 
             foundText.text = found.ToString();
+            notFoundText.text = notFound.ToString();
             totalFramesText.text = totalFrames.ToString();
             if (totalFrames > 0)
             {
@@ -110,6 +122,7 @@ public class AccuracyCalc : MonoBehaviour
         accuracy = 0f;
         totalFrames = 0;
         found = 0;
+        notFound = 0;
         time = testingTime;
         trackingTime = false;
     }
