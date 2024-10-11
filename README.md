@@ -2,6 +2,14 @@
 
 'Taste-enhancing AR/VR' changes how food looks using AR (Augmented Reality). You can see these cool changes on any device with a camera, like VR glasses or phones. This was my project for my Bachelor's degree in Computer Science, and it's about exploring how what we see can change how we taste food.
 
+![image](https://github.com/user-attachments/assets/3cc73466-4006-4f04-bc2d-2b0f17bf3ba4)
+![image](https://github.com/user-attachments/assets/d79b9bb5-0252-4514-9528-9cf183e48277)
+![image](https://github.com/user-attachments/assets/7f3ce31c-cf73-4fe8-abd3-afd26ff596d4)
+[![image](https://github.com/user-attachments/assets/60807a20-a6ff-4c9d-b709-0743c8e611c5)](https://github.com/ToniRajamaki/folio2/blob/main/public/assets/projects/ar/ar1.gif?raw=true)
+
+
+
+
 ## 🌟 Key Features
 
 - **Reading Data from ARuCo Markers:** The app can understand special markers to create augmented reality effects.
